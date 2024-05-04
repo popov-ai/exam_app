@@ -10,7 +10,7 @@ from txt_to_template import generate_output
 
 groq_api = st.secrets['groq_api']
 
-st.set_page_config(page_title="Exam bot", layout= 'centered', page_icon="🤖")
+st.set_page_config(page_title="Exam bot", page_icon="🤖")
 
 # functin to open a file and return its contents as a string
 def open_file(filepath):
@@ -47,6 +47,7 @@ def get_response(user_input, chat_history):
     return response_content
 
 # frontend part
+st.markdown("<h1 style='text-align: center; color: grey;'>Create an exam</h1>", unsafe_allow_html=True)
 st.title("Create an exam")
 
 css='''
