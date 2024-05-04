@@ -1,5 +1,6 @@
 from groq import Groq
 import os
+import streamlit as st
 
 groq_api = st.secrets['groq_api']
 
