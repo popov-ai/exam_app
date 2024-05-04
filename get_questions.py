@@ -53,7 +53,7 @@ def get_mcq():
 
 def get_owq():
     user_topics = open_file('user_topics.txt')
-    user_input = "Create 8 open-written questions. For each question add a correct answer with 2-3 sentences."
+    user_input = "Create exactly 8 open-written questions. For each question add a correct answer with 2-3 sentences."
     system_message = open_file('system_message_owq.txt')
     with open("chat_owq.txt", 'w', encoding="utf-8") as f:
         print(user_chatbot_conversation(system_message, user_topics, user_input), file=f)
