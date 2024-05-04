@@ -1,5 +1,4 @@
 groq
-dotenv
 os
 streamlit
 docx
