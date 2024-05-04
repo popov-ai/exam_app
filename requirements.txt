@@ -1,7 +1,5 @@
-streamlit
-os
+streamlit==1.34.0
 groq
 docx
 docx2txt
 pypdf
-re
