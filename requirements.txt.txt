@@ -1,8 +1,0 @@
-groq
-dotenv
-os
-streamlit
-docx
-docx2txt
-pypdf
-re
