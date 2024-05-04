@@ -51,7 +51,7 @@ st.title("Create an exam")
 
 css='''
 <style>
-    section.main > div {max-width:75rem}
+    section.main > div {max-width:60rem}
 </style>
 '''
 st.markdown(css, unsafe_allow_html=True)
