@@ -1,6 +1,5 @@
 import os
 import streamlit as st
-#from dotenv import load_dotenv
 from groq import Groq
 from streamlit_extras.buy_me_a_coffee import button
 from docx import Document
@@ -9,16 +8,9 @@ from pypdf import PdfReader
 from get_questions import get_mcq, get_owq
 from txt_to_template import generate_output
 
+groq_api = st.secrets['groq_api']
+
 st.set_page_config(page_title="Exam bot", page_icon="🤖")
-
-# ANSI escape codes for colors
-PINK = '\033[95m'
-CYAN = '\033[96m'
-YELLOW = '\033[93m'
-NEON_GREEN = '\033[92m'
-RESET_COLOR = '\033[0m'
-
-
 
 # functin to open a file and return its contents as a string
 def open_file(filepath):
@@ -38,7 +30,7 @@ def get_response(user_input, chat_history):
     Logs the conversation to a file.
     """
     # initialize Groq client
-    client = Groq(api_key="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")
+    client = Groq(api_key=groq_api)
     system_message = open_file('chatbot_conversational.txt')
     messages = [{'role': 'system', 'content': system_message}] + chat_history + [{'role': 'user', 'content': user_input}]
 
@@ -54,11 +46,8 @@ def get_response(user_input, chat_history):
 
     return response_content
 
-
-
-# streamlit
+# frontend part
 st.title("Create an exam")
-#st.markdown('____________')
 
 css='''
 <style>
@@ -68,7 +57,6 @@ css='''
 st.markdown(css, unsafe_allow_html=True)
 
 with st.container(height=490, border=True):
-
     st.header('Enter the course topics')
     st.markdown('____________')
     tab1, tab2 = st.tabs(['Type manually', 'From file'])
@@ -81,7 +69,6 @@ with st.container(height=490, border=True):
                     with open("user_topics.txt", 'a', encoding="utf-8") as out:
                         out.write(inp+', ')
                     st.write(inp)
-
 
     with tab2:
         user_topics = st.file_uploader(label="Upload the file with a list of topics :+1: :sunglasses:", type=["docx", "pdf", "txt"], accept_multiple_files=True)
@@ -109,7 +96,6 @@ with st.container(height=490, border=True):
             else:
                 st.write("Upload file first!")
 
-
 if inp or user_topics:
     if st.button(label='Show topics'):
         with open('user_topics.txt', 'r+') as ut:
@@ -125,7 +111,6 @@ if inp or user_topics:
                 # st.session_state['topics']
                 st.write('Done!')
                 st.session_state['topics_confirmed'] = True
-
 
 with st.container(border=True):
     st.header('Generate exam parts')
@@ -168,7 +153,6 @@ with st.container(border=True):
                 # del st.session_state['topics']
                 # del st.session_state['topics_confirmed']
 
-
     # download exam 
     if os.path.exists("output.docx"):
         with open("output.docx", 'rb') as file:
@@ -181,7 +165,6 @@ with st.container(border=True):
         # clean the user_topics file
         with open('user_topics.txt', 'w') as file:
             pass
-
 
 
 # -----------------------------------------
@@ -239,5 +222,4 @@ if user_query is not None and user_query != '':
         response = get_response(user_query, st.session_state.chat_history)
         st.write(response)
     st.session_state.chat_history.append({"role": "assistant", "content": response})
-
-    # -------------------------
+# -------------------------
