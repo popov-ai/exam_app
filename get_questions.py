@@ -1,9 +1,7 @@
 from groq import Groq
-from dotenv import load_dotenv
 import os
 
-load_dotenv()
-groq_api = os.getenv('groq_api')
+groq_api = st.secrets['groq_api']
 
 # functin to open a file and return its contents as a string
 def open_file(filepath):
