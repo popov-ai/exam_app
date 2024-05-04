@@ -164,7 +164,7 @@ with st.container(border=True):
     if os.path.exists("output.docx"):
         os.remove("output.docx")
         # clean the user_topics file
-        with open('user_topics.txt', 'w') as file:
+        with open('user_topics.txt', 'w') as ut, open('chat_mcq.txt', 'w') as cmcq, open('chat_owq.txt', 'w') as cowq:
             pass
 
 
