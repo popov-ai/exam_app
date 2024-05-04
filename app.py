@@ -151,8 +151,8 @@ with st.container(border=True):
         if 'new_mcq' in st.session_state or 'new_owq' in st.session_state:
             if st.button("Get exam!", use_container_width = True):
                 generate_output()
-                # del st.session_state['topics']
-                # del st.session_state['topics_confirmed']
+                del st.session_state['topics']
+                del st.session_state['topics_confirmed']
 
     # download exam 
     if os.path.exists("output.docx"):
