@@ -47,7 +47,7 @@ def get_response(user_input, chat_history):
     return response_content
 
 # frontend part
-st.markdown("<h1 style='text-align: center; color: yellow;'>Create an exam</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: orange;'>Create an exam</h1>", unsafe_allow_html=True)
 
 css='''
 <style>
