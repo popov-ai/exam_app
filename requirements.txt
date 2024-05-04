@@ -1,6 +1,6 @@
-groq
-os
 streamlit
+os
+groq
 docx
 docx2txt
 pypdf
