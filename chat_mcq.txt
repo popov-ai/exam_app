@@ -1,0 +1,140 @@
+Q1. What is the main purpose of a Binary Search Tree (BST)?
+a) To store unsorted data
+b) To perform depth-first search
+c) To efficiently search for elements
+d) To sort data
+Answer: c) To efficiently search for elements
+
+Q2. What is the time complexity of searching in a Binary Search Tree (BST)?
+a) O(1)
+b) O(log n)
+c) O(n)
+d) O(n log n)
+Answer: b) O(log n)
+
+Q3. Which graph traversal technique visits nodes in ascending order?
+a) Depth-First Search (DFS)
+b) Breadth-First Search (BFS)
+c) In-Order Traversal
+d) Pre-Order Traversal
+Answer: c) In-Order Traversal
+
+Q4. What is the primary use of a Graph?
+a) To model social networks
+b) To optimize network routes
+c) To detect cycles
+d) To analyze traffic patterns
+Answer: a) To model social networks
+
+Q5. What is the time complexity of inserting a node in a Binary Search Tree (BST)?
+a) O(1)
+b) O(log n)
+c) O(n)
+d) O(n log n)
+Answer: b) O(log n)
+
+Q6. Which graph traversal technique visits nodes in the order they are discovered?
+a) Depth-First Search (DFS)
+b) Breadth-First Search (BFS)
+c) Dijkstra's Algorithm
+d) Floyd-Warshall Algorithm
+Answer: a) Depth-First Search (DFS)
+
+Q7. What is the purpose of a Graph's adjacency matrix?
+a) To store node values
+b) To store edge connections
+c) To store node neighbors
+d) To store graph weights
+Answer: b) To store edge connections
+
+Q8. What is the time complexity of deleting a node in a Binary Search Tree (BST)?
+a) O(1)
+b) O(log n)
+c) O(n)
+d) O(n log n)
+Answer: b) O(log n)
+
+Q9. Which graph traversal technique visits nodes in the order of their distance from the starting node?
+a) Depth-First Search (DFS)
+b) Breadth-First Search (BFS)
+c) Dijkstra's Algorithm
+d) Floyd-Warshall Algorithm
+Answer: c) Dijkstra's Algorithm
+
+Q10. What is the purpose of a Binary Search Tree (BST) node's left and right child pointers?
+a) To store node values
+b) To store edge connections
+c) To store node neighbors
+d) To store graph weights
+Answer: c) To store node neighbors
+
+Q11. Which graph traversal technique visits nodes in a layer-by-layer fashion?
+a) Depth-First Search (DFS)
+b) Breadth-First Search (BFS)
+c) Dijkstra's Algorithm
+d) Floyd-Warshall Algorithm
+Answer: b) Breadth-First Search (BFS)
+
+Q12. What is the primary use of a Binary Search Tree (BST)?
+a) To model social networks
+b) To optimize network routes
+c) To detect cycles
+d) To analyze traffic patterns
+Answer: c) To detect cycles
+
+Q13. What is the time complexity of traversing a Binary Search Tree (BST) in-order?
+a) O(1)
+b) O(log n)
+c) O(n)
+d) O(n log n)
+Answer: b) O(log n)
+
+Q14. Which graph traversal technique visits nodes in the order they are discovered, without revisiting nodes?
+a) Depth-First Search (DFS)
+b) Breadth-First Search (BFS)
+c) Dijkstra's Algorithm
+d) Floyd-Warshall Algorithm
+Answer: a) Depth-First Search (DFS)
+
+Q15. What is the purpose of a Graph's edge list?
+a) To store node values
+b) To store edge connections
+c) To store node neighbors
+d) To store graph weights
+Answer: b) To store edge connections
+
+Q16. What is the time complexity of finding the shortest path in a Graph?
+a) O(1)
+b) O(log n)
+c) O(n)
+d) O(n log n)
+Answer: c) O(n)
+
+Q17. Which graph traversal technique visits nodes in the order of their distance from the starting node, without revisiting nodes?
+a) Depth-First Search (DFS)
+b) Breadth-First Search (BFS)
+c) Dijkstra's Algorithm
+d) Floyd-Warshall Algorithm
+Answer: c) Dijkstra's Algorithm
+
+Q18. What is the primary use of a Graph's adjacency list?
+a) To model social networks
+b) To optimize network routes
+c) To detect cycles
+d) To analyze traffic patterns
+Answer: a) To model social networks
+
+Q19. What is the time complexity of traversing a Binary Search Tree (BST) pre-order?
+a) O(1)
+b) O(log n)
+c) O(n)
+d) O(n log n)
+Answer: b) O(log n)
+
+Q20. Which graph traversal technique visits nodes in the order of their distance from the starting node, with the possibility of revisiting nodes?
+a) Depth-First Search (DFS)
+b) Breadth-First Search (BFS)
+c) Dijkstra's Algorithm
+d) Floyd-Warshall Algorithm
+Answer: c) Dijkstra's Algorithm
+

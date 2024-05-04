@@ -1,0 +1,24 @@
+Q1. Explain the main difference between a Binary Search Tree and a B-Tree.
+The main difference between a Binary Search Tree and a B-Tree is that a Binary Search Tree is a data structure that allows efficient search, insertion, and deletion of nodes, whereas a B-Tree is a self-balancing search tree that keeps data sorted and allows efficient insertion, deletion, and searching.
+
+Q2. Describe the time and space complexity of a Binary Search Tree.
+The time complexity of a Binary Search Tree is O(h) for search, insertion, and deletion operations, where h is the height of the tree. The space complexity is O(n), where n is the number of nodes in the tree.
+
+Q3. Discuss the advantages and disadvantages of using a Graph over a Tree.
+The main advantage of using a Graph over a Tree is that it allows multiple edges between nodes, which can represent complex relationships. However, this also increases the complexity of algorithms and data structures used to traverse and search the graph.
+
+Q4. Explain the concept of a Traversal in a Tree or Graph.
+A traversal is a process of visiting each node in a Tree or Graph, either in a specific order or randomly. It is used to traverse the nodes and retrieve information or perform operations on the nodes.
+
+Q5. Describe the main types of traversals in a Tree or Graph.
+The main types of traversals in a Tree or Graph are Inorder, Preorder, Postorder, Depth-First Search (DFS), and Breadth-First Search (BFS). Each type of traversal has its own advantages and disadvantages.
+
+Q6. Explain the concept of a Cycle in a Graph.
+A cycle in a Graph is a path that starts and ends at the same node, and passes through at least one edge more than once. Cycles can be used to represent relationships between nodes that have multiple edges between them.
+
+Q7. Discuss the importance of balancing in a Binary Search Tree.
+Balancing in a Binary Search Tree is important to maintain the tree's properties, such as the height of the tree, which affects the time complexity of search, insertion, and deletion operations. Balancing ensures that the tree remains balanced and efficient.
+
+Q8. Explain the main difference between a Directed Graph and an Undirected Graph.
+The main difference between a Directed Graph and an Undirected Graph is that a Directed Graph has directed edges, which means that the direction of the edge matters, whereas an Undirected Graph has undirected edges, which means that the direction of the edge does not matter.
+
