@@ -157,16 +157,15 @@ with st.container(border=True):
     # download exam 
     if os.path.exists("output.docx"):
         with open("output.docx", 'rb') as file:
-            st.download_button(label="Download Exam", data=file, file_name="output.docx")
+            if st.download_button(label="Download Exam", data=file, file_name="output.docx"):
+                # clean the user_topics file
+                with open('user_topics.txt', 'w') as ut, open('chat_mcq.txt', 'w') as cmcq, open('chat_owq.txt', 'w') as cowq:
+                    pass
 
 
     # delete the output.docx
     if os.path.exists("output.docx"):
         os.remove("output.docx")
-        # clean the user_topics file
-        with open('user_topics.txt', 'w') as ut, open('chat_mcq.txt', 'w') as cmcq, open('chat_owq.txt', 'w') as cowq:
-            pass
-
 
 # -----------------------------------------
 # FEEDBACKS
